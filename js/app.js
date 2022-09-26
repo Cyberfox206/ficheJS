@@ -127,13 +127,39 @@ div(15,5);
 
 //fonction qui détecte ci le nombre est positife ou négatife
 function positive(num){
-    if(num < 0){
-        console.log(false)
-    }else{
-        console.log(true)
-    }
+    return( num > 0)
 }
-positive(-1);
+console.log(positive(-1))
+
+
+//permet de convetire la type de age en string
+function roughScale(age) {
+    const parsed = parseInt(age, 10);
+    if (isNaN(parsed)) { 
+        console.log("ce n'est pas un nombre");
+    }
+    console.log("l'age de lutilistateur est" + " " + age);
+  }
+  roughScale(age);
+
+  let VERIFIER_NOMBRE = isNaN(age);
+  console.log(VERIFIER_NOMBRE);
+  console.log(age)
 
 
 
+  function isvalide(userInput){
+    if(parseInt(userInput) && userInput >= 12 && userInput <= 90){
+        return true
+    }else{
+        return false
+    }
+  }
+  console.log(isvalide(age));
+
+
+let resultat = isvalide(age);
+let resultatInverse = !resultat;
+
+console.log(resultat)
+console.log(resultatInverse)
