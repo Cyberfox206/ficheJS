@@ -40,13 +40,100 @@ let test = 3 > 5;
 console.log(test)
 console.log(typeof test)
 
+
 // operateur de comparaison: ==; ===; !==; !=; <; >; <=; >= ;
 
 
 //l'opération réaliser est une addition des chaine de caractère
+//ce qui fait qu'il affiche les chaine de caractère collée
 let identity = "bonjour" + "prenom" + "vous avez" + "age" + "ans"
 console.log(identity)
 
+
+//le .toUpperCase() fait en sorte de transformer un chaine de cractère minuscule en majuscule
+//ici on affiche majuscule qui contien la chaine de caractère de identity en majuscule grace a .toUpperCase()
 let majuscule = identity.toUpperCase();
 console.log(majuscule)
+
+
+//verifi si l'age que l'utilisateur et corecte
+age = prompt("tapez votre age");
+if(age <= 0){
+    console.log("vous etre un poisson pane")
+} 
+
+
+//vérifier si l'utilisateur a mit un age valide
+if(age > 0 && age <= 120  ){
+    console.log("Votre age est valide")
+}else{
+    console.log("Je ne suis pas d'accord")
+}
+
+
+//verifi si l'utilisateur est majeur selon le pays
+if(age >= 21){
+    console.log("vous etes majeur")
+}else if(age < 21 && age >= 18){
+    console.log("vous etes majeur mais pas aux USA")
+}else{
+    console.log("vous etes mineur")
+}
+
+
+//opérateur boolean && ; | ; ! ;
+
+
+//fonction qui dit bonjour quand on l'apelle
+function direBonjour(){
+    console.log("bonjour")
+}
+direBonjour();
+
+
+//fonction qui dit bonjour a une personne quand on l'apelle
+function direBonjourAkelkain(name){
+    console.log("bonjour" + " " + name)
+}
+direBonjourAkelkain("brennan");
+
+
+//fonction qui dit bonjour a une personne + la ville ou il vit
+//ci la ville n'est pas présisez alor dir qu'il vit a lyon
+function hello(name,city ){
+    console.log("bonjour" + " " + name)
+    if(city){
+        console.log("vous habitez a" + " " + city)
+    } else{
+        console.log("vous habitez a" + " " + "lyon")
+    }
+}
+hello("brennan");
+
+
+//fonction qui adition a et b
+function add(a,b){
+   console.log(a + b)
+}
+add(15,5);
+
+
+//fonction qui divise a par b 
+function div(a,b){
+    console.log(a/b)
+}
+div(15,5);
+
+
+//fonction qui détecte ci le nombre est positife ou négatife
+function positive(num){
+    if(num < 0){
+        console.log(false)
+    }else{
+        console.log(true)
+    }
+}
+positive(-1);
+
+
 
