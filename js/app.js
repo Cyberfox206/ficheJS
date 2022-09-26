@@ -192,3 +192,21 @@ while(index <= 100){
     index++;
 }
 console.log(string_caractere)
+
+
+
+// ce programe ne fonctionne pas car key n'est pas plus grand que zero
+let key = 0;
+while(key > 100){
+   console.log(key);
+   key++;
+}
+
+
+//ceci est une boucle spésiale https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/do...while
+//ce code ne fonctione pas car key n'est pas plus grand que zero aussi
+let id = 0;
+do {
+   console.log(id);
+   id++;
+} while(id > 100);
