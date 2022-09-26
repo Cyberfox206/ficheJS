@@ -163,3 +163,32 @@ let resultatInverse = !resultat;
 
 console.log(resultat)
 console.log(resultatInverse)
+
+let index = 0;
+while(index <= 4){
+    console.log(index)
+    index++;
+}
+
+index = 99;
+while(index >= 3){
+    console.log(index)
+    index --;
+}
+
+index = 0;
+while(index <= 100){
+    if(index >= 0 && index <= 10){
+        console.log(index)
+    }else if (index >= 90 && index <= 100){
+        console.log(index)
+    }
+    index ++;
+}
+
+let string_caractere = "";
+while(index <= 100){
+    string_caractere = string_caractere + index;
+    index++;
+}
+console.log(string_caractere)
