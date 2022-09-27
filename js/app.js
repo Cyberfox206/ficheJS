@@ -231,3 +231,25 @@ while(index <= ages.length -1){
     console.log(ages[index])
     index ++;
 }
+
+
+let a = ["a","b","c"];
+
+console.log(a.includes("b"));
+
+//cela retournera true dans la console
+console.log(a.includes("b",1));
+
+//cela retournera false dans la console
+console.log(a.includes("b",2));
+
+let t = [3, 12, 50, 20];
+let t2 = [];
+let tmp = t.length;
+console.log(tmp)
+
+while(tmp > 0){
+    t2.push(t.pop());
+    tmp--;
+}
+console.log(t2);
