@@ -186,6 +186,7 @@ while(index <= 100){
     index ++;
 }
 
+index = 0; 
 let string_caractere = "";
 while(index <= 100){
     string_caractere = string_caractere + index;
@@ -210,3 +211,23 @@ do {
    console.log(id);
    id++;
 } while(id > 100);
+
+let ages = [13,12,10,20,15,18,16,32,45,21,22,84];
+console.log(ages);
+
+console.log(ages[0]);
+console.log(ages[1]);
+console.log(ages[2]);
+console.log(ages[3]);
+
+let longueur = ages.length
+console.log(longueur)
+
+console.log(ages[11])
+
+
+index = 0;
+while(index <= ages.length -1){
+    console.log(ages[index])
+    index ++;
+}
